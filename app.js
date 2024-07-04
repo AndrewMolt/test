@@ -105,7 +105,7 @@ app.post("/delete", function(req, res)
 {
   const checkedItemId = req.body.checkbox;
 
-  Item.findByIdAndDelete(checkedItemId);
+  Item.findOneAndDelete({id: checkedItemId});
   console.log(checkedItemId);
   res.redirect("/");
 
