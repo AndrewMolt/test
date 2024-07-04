@@ -64,27 +64,7 @@ app.get("/", function(req, res)
   });
 });
 
-// app.get("/:customListName", function (req, res)
-// {
-//   const customListName = req.params.customListName;
-//
-//   List.findOne({name: customListName}).then(foundList)
-//   {
-//     if(!foundList)
-//     {
-//       //Create list
-//       const list = new List({
-//         name: customListName,
-//         items: defaultItems
-//       });
-//       list.save();
-//       res.redirect("/", customListName);
-//     } else {
-//       //Show existing list
-//       res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
-//     }
-//   }
-// });
+
 
 app.post("/", function(req, res){
 
@@ -120,10 +100,3 @@ if (port == null || port == "")
 app.listen(port, function() {
   console.log("Server started succesfully via Heroku.");
 });
-
-
-
-// getItems().then(function(FoundItems)
-// {
-//     res.render("list", {listTitle: "Today", newListItems: FoundItems});
-// });
