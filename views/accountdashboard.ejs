@@ -1,0 +1,84 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1> NAU BANK </h1>
+  </div>
+
+  <form action = "/logout" method = "POST">
+    <button type = "logout">Log Out</button>
+  </form>
+
+  <div class="hseparator1">
+    <span></span>
+    </div>
+
+  <div class="numberszone">
+    <%  account %>
+    <div class ="numbersbox">
+      <div class = "title">
+        <text> Account Number:</text>
+      </div>
+      <div class="number">
+        <text type=number><%=account.accountnum %> </text>
+      </div>
+    </div>
+    <div class ="numbersbox">
+      <div class = "title">
+        <text> Routing Number:</text>
+      </div>
+      <div class="number">
+        <text type=number><%=account.routingnum %> </text>
+      </div>
+    </div>
+    <div class ="numbersbox">
+      <div class = "title">
+        <text> Direct Deposit Number:</text>
+      </div>
+      <div class="number">
+        <text type=number><%=account.directdepositnum %> </text>
+      </div>
+    </div>
+    <div class ="numbersbox">
+      <div class = "title">
+        <text> Wire Transfer Number:</text>
+      </div>
+      <div class="number">
+        <text type=number><%=account.wiretransfernum %> </text>
+      </div>
+    </div>
+  </div>
+
+  <div class="vseparator">
+    <span></span>
+    </div>
+
+  <div class="balancebox">
+    <div class= "balancetitle">
+      <text> Account Balance: </text>
+      </div>
+    <div class= "balance">
+      <text> <%=account.balance%></text>
+      </div>
+  </div>
+
+  <div class="hseparator2">
+      <span></span>
+  </div>
+
+  <div class="transactiontitlebox">
+    <text>            Transaction History</text>
+  </div>
+
+  <div class="hseparator3">
+      <span></span>
+  </div>
+
+  <div class ="transactionhistorybox">
+    <div class = "transaction">
+      <text> Transaction Cost </text>
+    </div>
+  </div>
+
+
+
+<%- include("footer") -%>

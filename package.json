@@ -1,5 +1,5 @@
 {
-  "name": "todolist-v1",
+  "name": "naubank",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "alert": "^6.0.2",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "mongoose": "^8.4.4"
+    "mongoose": "^8.4.4",
+    "popups": "^1.1.3"
   }
 }
